@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Утасны дугаар!"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Утасны дугаараа бичнүү!"
+        android:inputType="phone"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/text"/>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_marginBottom="20dp"
+        android:text="Код илгээх"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/OTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Баталгаажуулах кодоо оруулнуу!"
+        android:inputType="number"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/button1"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OTP"
+        android:layout_marginBottom="20dp"
+        android:text="Баталгаажуулах"
+        android:textSize="20dp"
+        android:enabled="false"/>
+
+    <ProgressBar
+        android:id="@+id/bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button2"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+</RelativeLayout>
